@@ -8,8 +8,8 @@ import org.springframework.http.HttpStatus;
 @RequiredArgsConstructor
 public enum SuccessMessage {
 
-    SUCCESS_CREATE_PRODUCT(HttpStatus.CREATED, "Order created successfully"),
-    SUCCESS_GET_PRODUCTS(HttpStatus.OK, "Get orders successfully"),;
+    SUCCESS_CREATE_ORDER(HttpStatus.CREATED, "Order created successfully"),
+    SUCCESS_GET_ORDER(HttpStatus.OK, "Get order successfully"),;
 
     private final HttpStatus httpStatus;
     private final String message;
