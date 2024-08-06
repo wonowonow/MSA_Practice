@@ -1,4 +1,4 @@
-package com.sparta.msa_exam.product.common;
+package com.sparta.msa_exam.product.common.response;
 
 import lombok.AccessLevel;
 import lombok.Builder;
@@ -13,8 +13,8 @@ public record ErrorResponse(
 
     public static ErrorResponse of(String message) {
         return ErrorResponse.builder()
-                .success(false)
-                .message(message)
-                .build();
+                            .success(false)
+                            .message(message)
+                            .build();
     }
 }

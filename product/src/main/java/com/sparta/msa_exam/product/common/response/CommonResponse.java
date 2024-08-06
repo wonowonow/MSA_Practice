@@ -1,4 +1,4 @@
-package com.sparta.msa_exam.product.common;
+package com.sparta.msa_exam.product.common.response;
 
 import lombok.NonNull;
 

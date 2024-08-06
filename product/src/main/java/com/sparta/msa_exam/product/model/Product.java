@@ -1,8 +1,8 @@
 package com.sparta.msa_exam.product.model;
 
+import com.sparta.msa_exam.product.dto.ProductCreateDto;
 import com.sparta.msa_exam.product.model.valueobject.ProductName;
 import com.sparta.msa_exam.product.model.valueobject.ProductSupplyPrice;
-import jakarta.persistence.Column;
 import jakarta.persistence.Embedded;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -23,7 +23,7 @@ public class Product {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    private Long productId;
 
     @Embedded
     private ProductName name;
@@ -31,7 +31,11 @@ public class Product {
     @Embedded
     private ProductSupplyPrice supplyPrice;
 
-    public static Product of() {
-        return Product.builder().name(new ProductName("야야야야!!")).build();
+    public static Product of(ProductCreateDto productCreateDto) {
+
+        return Product.builder()
+                      .name(new ProductName(productCreateDto.name()))
+                      .supplyPrice(new ProductSupplyPrice(productCreateDto.supplyPrice()))
+                      .build();
     }
 }
