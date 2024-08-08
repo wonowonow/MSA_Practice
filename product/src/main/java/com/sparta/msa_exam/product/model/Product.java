@@ -35,7 +35,7 @@ public class Product {
 
         return Product.builder()
                       .name(new ProductName(productCreateDto.name()))
-                      .supplyPrice(new ProductSupplyPrice(productCreateDto.supplyPrice()))
+                      .supplyPrice(new ProductSupplyPrice(productCreateDto.supply_price()))
                       .build();
     }
 }

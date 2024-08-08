@@ -1,9 +1,9 @@
 package com.sparta.msa_exam.product.dto;
 
 public record ProductResponseDto(
-        Long productId,
+        Long product_id,
         String name,
-        Integer supplyPrice
+        Integer supply_price
 ) {
 
 }
