@@ -1,5 +1,6 @@
 package com.sparta.msa_exam.order.client;
 
+import com.sparta.msa_exam.order.client.response.ProductsResponse;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 
@@ -7,5 +8,5 @@ import org.springframework.web.bind.annotation.GetMapping;
 public interface ProductClient {
 
     @GetMapping("/products")
-    String getProducts();
+    ProductsResponse getProducts();
 }

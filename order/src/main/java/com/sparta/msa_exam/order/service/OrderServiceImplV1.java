@@ -1,8 +1,7 @@
 package com.sparta.msa_exam.order.service;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.sparta.msa_exam.order.client.ProductClient;
+import com.sparta.msa_exam.order.client.response.ProductsResponse;
 import com.sparta.msa_exam.order.common.exception.OrderException;
 import com.sparta.msa_exam.order.common.message.ExceptionMessage;
 import com.sparta.msa_exam.order.dto.OrderCreateDto;
@@ -12,15 +11,9 @@ import com.sparta.msa_exam.order.dto.OrderResponseDto;
 import com.sparta.msa_exam.order.model.Order;
 import com.sparta.msa_exam.order.model.OrderProduct;
 import com.sparta.msa_exam.order.repository.OrderRepository;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 import java.util.stream.Collectors;
 import lombok.RequiredArgsConstructor;
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
-import org.json.simple.parser.ParseException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -34,29 +27,15 @@ public class OrderServiceImplV1 implements OrderService {
 
     @Override
     @Transactional
-    public void createOrder(OrderCreateDto orderCreateDto)
-            throws ParseException, JsonProcessingException {
+    public void createOrder(OrderCreateDto orderCreateDto) {
 
         Order order = Order.of(orderCreateDto);
         orderRepository.save(order);
 
-        Set<Long> productIds = new HashSet<>();
-
-        String products = productClient.getProducts();
-        JSONParser jsonParser = new JSONParser();
-        JSONObject parsedJson = (JSONObject) jsonParser.parse(products);
-        JSONArray jsonArray = (JSONArray) parsedJson.get("data");
-
-        ObjectMapper objectMapper = new ObjectMapper();
-        for (Object object : jsonArray) {
-            JSONObject jsonObject = (JSONObject) object;
-            String productIdStr = jsonObject.get("productId").toString();
-            Long productId = objectMapper.readValue(productIdStr, Long.class);
-            productIds.add(productId);
-        }
+        ProductsResponse products = productClient.getProducts();
 
         for (Long id : orderCreateDto.product_ids()) {
-            if (!productIds.contains(id)) {
+            if (products.getData().stream().noneMatch(product -> product.product_id().equals(id))) {
                 throw new OrderException(ExceptionMessage.NOT_FOUND_PRODUCT);
             }
             OrderProductCreateDto orderProductCreateDto = new OrderProductCreateDto(order, id);
@@ -66,6 +45,7 @@ public class OrderServiceImplV1 implements OrderService {
 
     @Override
     public OrderResponseDto getOrder(Long orderId) {
+
         Order order = orderRepository.findById(orderId).orElseThrow(
                 () -> new OrderException(ExceptionMessage.NOT_FOUND_ORDER)
         );
@@ -79,28 +59,15 @@ public class OrderServiceImplV1 implements OrderService {
     }
 
     @Override
-    public void editOrder(Long orderId, OrderEditDto orderEditDto)
-            throws JsonProcessingException, ParseException {
+    public void editOrder(Long orderId, OrderEditDto orderEditDto) {
+
         Order order = orderRepository.findById(orderId).orElseThrow(
                 () -> new OrderException(ExceptionMessage.NOT_FOUND_ORDER)
         );
 
-        Set<Long> productIds = new HashSet<>();
+        ProductsResponse products = productClient.getProducts();
 
-        String products = productClient.getProducts();
-        JSONParser jsonParser = new JSONParser();
-        JSONObject parsedJson = (JSONObject) jsonParser.parse(products);
-        JSONArray jsonArray = (JSONArray) parsedJson.get("data");
-
-        ObjectMapper objectMapper = new ObjectMapper();
-        for (Object object : jsonArray) {
-            JSONObject jsonObject = (JSONObject) object;
-            String productIdStr = jsonObject.get("productId").toString();
-            Long productId = objectMapper.readValue(productIdStr, Long.class);
-            productIds.add(productId);
-        }
-
-        if (!productIds.contains(orderEditDto.product_id())) {
+        if (products.getData().stream().noneMatch(product -> product.product_id().equals(orderEditDto.product_id()))) {
             throw new OrderException(ExceptionMessage.NOT_FOUND_PRODUCT);
         }
 
