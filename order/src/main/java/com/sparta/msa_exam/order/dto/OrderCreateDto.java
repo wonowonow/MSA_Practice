@@ -4,7 +4,7 @@ import java.util.List;
 
 public record OrderCreateDto(
         String name,
-        List<Long> productIds
+        List<Long> product_ids
 ) {
 
 }

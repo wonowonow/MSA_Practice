@@ -1,13 +1,11 @@
 package com.sparta.msa_exam.order.client;
 
-import com.sparta.msa_exam.order.common.response.CommonResponse;
 import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 
-@FeignClient
+@FeignClient(name = "product-service")
 public interface ProductClient {
 
-    @GetMapping
-    ResponseEntity<? extends CommonResponse> getProducts();
+    @GetMapping("/products")
+    String getProducts();
 }

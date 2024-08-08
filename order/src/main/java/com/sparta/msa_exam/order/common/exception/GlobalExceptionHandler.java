@@ -16,6 +16,12 @@ public class GlobalExceptionHandler {
         return ResponseEntity.status(e.getHttpStatus()).body(ErrorResponse.of(e.getMessage()));
     }
 
+    @ExceptionHandler(value = OrderProductException.class)
+    public ResponseEntity<ErrorResponse> handleOrderException(OrderProductException e){
+
+        return ResponseEntity.status(e.getHttpStatus()).body(ErrorResponse.of(e.getMessage()));
+    }
+
     @ExceptionHandler(value = IllegalArgumentException.class)
     public ResponseEntity<ErrorResponse> handleIllegalArgumentException(IllegalArgumentException e){
 

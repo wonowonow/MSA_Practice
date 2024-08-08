@@ -1,5 +1,7 @@
 package com.sparta.msa_exam.order.common.message;
 
+import static org.springframework.http.HttpStatus.*;
+
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -8,8 +10,9 @@ import org.springframework.http.HttpStatus;
 @RequiredArgsConstructor
 public enum SuccessMessage {
 
-    SUCCESS_CREATE_ORDER(HttpStatus.CREATED, "Order created successfully"),
-    SUCCESS_GET_ORDER(HttpStatus.OK, "Get order successfully"),;
+    SUCCESS_CREATE_ORDER(CREATED, "Order created successfully"),
+    SUCCESS_GET_ORDER(OK, "Get order successfully"),
+    SUCCESS_EDIT_ORDER(OK, "Edit order successfully"),;
 
     private final HttpStatus httpStatus;
     private final String message;
