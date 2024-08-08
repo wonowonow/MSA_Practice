@@ -71,7 +71,7 @@ public class OrderServiceImplV1 implements OrderService {
         );
 
         List<Integer> productIds = order.getProductIds().stream()
-                .map(OrderProduct::getId)
+                .map(OrderProduct::getProductId)
                 .map(Long::intValue)
                 .collect(Collectors.toList());
 
