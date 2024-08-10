@@ -46,12 +46,7 @@ public class OrderServiceImplV1 implements OrderService {
             order.addOrderProduct(orderProductService.createOrderProduct(orderProductCreateDto));;
         }
 
-        List<Integer> productIds = order.getProductIds().stream()
-                .map(OrderProduct::getProductId)
-                .map(Long::intValue)
-                .collect(Collectors.toList());
-
-        return new OrderResponseDto(order.getOrderId(), productIds);
+        return OrderResponseDto.fromEntity(order);
     }
 
     @Override
@@ -62,12 +57,7 @@ public class OrderServiceImplV1 implements OrderService {
                 () -> new OrderException(ExceptionMessage.NOT_FOUND_ORDER)
         );
 
-        List<Integer> productIds = order.getProductIds().stream()
-                .map(OrderProduct::getProductId)
-                .map(Long::intValue)
-                .collect(Collectors.toList());
-
-        return new OrderResponseDto(order.getOrderId(), productIds);
+        return OrderResponseDto.fromEntity(order);
     }
 
     @Override
@@ -86,11 +76,6 @@ public class OrderServiceImplV1 implements OrderService {
 
         order.addOrderProduct(orderProductService.createOrderProduct(new OrderProductCreateDto(order, orderEditDto.product_id())));
 
-        List<Integer> productIds = order.getProductIds().stream()
-                .map(OrderProduct::getProductId)
-                .map(Long::intValue)
-                .collect(Collectors.toList());
-
-        return new OrderResponseDto(order.getOrderId(), productIds);
+        return OrderResponseDto.fromEntity(order);
     }
 }
