@@ -9,6 +9,13 @@ spring:
     password: ${PROD_RDS_PASSWORD}
     driver-class-name: com.mysql.cj.jdbc.Driver
 
+  data:
+    redis:
+      host: ${PROD_REDIS_HOST}
+      port: ${PROD_REDIS_PORT}
+      username: ${PROD_REDIS_USERNAME}
+      password: ${PROD_REDIS_PASSWORD}
+
   jpa:
     hibernate:
       ddl-auto: none

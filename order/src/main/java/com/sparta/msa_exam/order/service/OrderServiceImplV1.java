@@ -14,10 +14,14 @@ import com.sparta.msa_exam.order.repository.OrderRepository;
 import java.util.List;
 import java.util.stream.Collectors;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.cache.annotation.CachePut;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 @Service
+@Slf4j
 @RequiredArgsConstructor
 public class OrderServiceImplV1 implements OrderService {
 
@@ -27,10 +31,10 @@ public class OrderServiceImplV1 implements OrderService {
 
     @Override
     @Transactional
-    public void createOrder(OrderCreateDto orderCreateDto) {
+    public OrderResponseDto createOrder(OrderCreateDto orderCreateDto) {
 
         Order order = Order.of(orderCreateDto);
-        orderRepository.save(order);
+        order = orderRepository.save(order);
 
         ProductsResponse products = productClient.getProducts();
 
@@ -41,9 +45,17 @@ public class OrderServiceImplV1 implements OrderService {
             OrderProductCreateDto orderProductCreateDto = new OrderProductCreateDto(order, id);
             order.addOrderProduct(orderProductService.createOrderProduct(orderProductCreateDto));;
         }
+
+        List<Integer> productIds = order.getProductIds().stream()
+                .map(OrderProduct::getProductId)
+                .map(Long::intValue)
+                .collect(Collectors.toList());
+
+        return new OrderResponseDto(order.getOrderId(), productIds);
     }
 
     @Override
+    @Cacheable(cacheNames = "order", key = "args[0]")
     public OrderResponseDto getOrder(Long orderId) {
 
         Order order = orderRepository.findById(orderId).orElseThrow(
@@ -59,7 +71,8 @@ public class OrderServiceImplV1 implements OrderService {
     }
 
     @Override
-    public void editOrder(Long orderId, OrderEditDto orderEditDto) {
+    @CachePut(cacheNames = "order", key = "args[0]")
+    public OrderResponseDto editOrder(Long orderId, OrderEditDto orderEditDto) {
 
         Order order = orderRepository.findById(orderId).orElseThrow(
                 () -> new OrderException(ExceptionMessage.NOT_FOUND_ORDER)
@@ -72,5 +85,12 @@ public class OrderServiceImplV1 implements OrderService {
         }
 
         order.addOrderProduct(orderProductService.createOrderProduct(new OrderProductCreateDto(order, orderEditDto.product_id())));
+
+        List<Integer> productIds = order.getProductIds().stream()
+                .map(OrderProduct::getProductId)
+                .map(Long::intValue)
+                .collect(Collectors.toList());
+
+        return new OrderResponseDto(order.getOrderId(), productIds);
     }
 }

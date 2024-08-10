@@ -4,13 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21829c09-51e0-4203-bfb1-2f5e413f22a8" name="Changes" comment="feat: prod, dev 환경 분리">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/auth/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/eureka/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/order/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/product/.gitignore" afterDir="false" />
+    <list default="true" id="21829c09-51e0-4203-bfb1-2f5e413f22a8" name="Changes" comment="feat: gitignore .idea 제외">
+      <change afterPath="$PROJECT_DIR$/order/src/main/java/com/sparta/msa_exam/order/config/CacheConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/order/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/sparta/msa_exam/order/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/sparta/msa_exam/order/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/sparta/msa_exam/order/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/sparta/msa_exam/order/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/sparta/msa_exam/order/service/OrderServiceImplV1.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/sparta/msa_exam/order/service/OrderServiceImplV1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/resources/application-prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/resources/application-prod.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,11 +172,14 @@
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
-      "mysql",
-      "redis"
+      "redis",
+      "mysql"
     ]
   }
 }]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.sparta.msa_exam.order.dto" />
@@ -432,7 +440,7 @@
       <workItem from="1723116946059" duration="785000" />
       <workItem from="1723168250223" duration="1715000" />
       <workItem from="1723170285615" duration="63000" />
-      <workItem from="1723257283745" duration="8058000" />
+      <workItem from="1723257283745" duration="10059000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -618,7 +626,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723272545875</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="feat: gitignore .idea 제외">
+      <option name="closed" value="true" />
+      <created>1723272782753</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1723272782753</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -647,6 +663,18 @@
     <MESSAGE value="refactor: parse json -&gt; Deserialization" />
     <MESSAGE value="feat: Caching getProducts" />
     <MESSAGE value="feat: prod, dev 환경 분리" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: prod, dev 환경 분리" />
+    <MESSAGE value="feat: gitignore .idea 제외" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: gitignore .idea 제외" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/order/src/main/java/com/sparta/msa_exam/order/service/OrderServiceImplV1.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
