@@ -24,10 +24,8 @@ public class ProductController {
     @PostMapping("/products")
     public ResponseEntity<? extends CommonResponse> createProduct(@RequestBody ProductCreateDto productCreateDto) {
 
-        productService.createProduct(productCreateDto);
-
         return ResponseEntity.status(SUCCESS_CREATE_PRODUCT.getHttpStatus())
-                             .body(success(SUCCESS_CREATE_PRODUCT.getMessage()));
+                             .body(success(SUCCESS_CREATE_PRODUCT.getMessage(), productService.createProduct(productCreateDto)));
     }
 
     @GetMapping("/products")
