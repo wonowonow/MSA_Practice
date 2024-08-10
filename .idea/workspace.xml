@@ -1,0 +1,652 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="21829c09-51e0-4203-bfb1-2f5e413f22a8" name="Changes" comment="feat: prod, dev 환경 분리">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/auth/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/eureka/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/order/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/product/.gitignore" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/auth">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/eureka">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/gateway">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/order">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/product">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/order">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/eureka">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/product">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="order" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="order" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="order" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="product" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="product" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="product" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Record" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;wonowonow&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/wonowonow/MSA_Practice.git&quot;,
+    &quot;accountId&quot;: &quot;55f518eb-4a8b-41c0-a900-be6432135ead&quot;
+  }
+}</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2kGrx9ezQllR9UUD45vlnHNFBrX" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle./Users/jowonho/Documents/Programing/Spring/SpartaDeep/Projects/Personal/Chapter1/eureka [buildDependents].executor": "Run",
+    "Gradle./Users/jowonho/Documents/Programing/Spring/SpartaDeep/Projects/Personal/Chapter1/eureka [build].executor": "Run",
+    "Gradle.Build auth.executor": "Run",
+    "Gradle.Build eureka.executor": "Run",
+    "Gradle.Build gateway.executor": "Run",
+    "Gradle.Build order.executor": "Run",
+    "Gradle.Build product.executor": "Run",
+    "Gradle.order [build].executor": "Run",
+    "Gradle.product [build].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.AuthApplication: 19095.executor": "Run",
+    "Spring Boot.EurekaApplication.executor": "Run",
+    "Spring Boot.EurekaApplication: 19090.executor": "Run",
+    "Spring Boot.GatewayApplication: 19091.executor": "Run",
+    "Spring Boot.OrderApplication: 19092.executor": "Run",
+    "Spring Boot.ProductApplication.executor": "Run",
+    "Spring Boot.ProductApplication: 19093.executor": "Run",
+    "Spring Boot.ProductApplication: 19094.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/jowonho/Documents/Programing/Spring/SpartaDeep/Projects/Personal/Chapter1/gateway/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.configurations.included.in.services": "true",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql",
+      "redis"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.sparta.msa_exam.order.dto" />
+      <recent name="com.sparta.msa_exam.order.model.valueobject" />
+      <recent name="com.sparta.msa_exam.product.dto" />
+      <recent name="com.sparta.msa_exam.product.model.valueobject" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/gateway/src/main/resources" />
+      <recent name="$PROJECT_DIR$/auth/src/main/resources" />
+      <recent name="$PROJECT_DIR$/order/src/main/resources" />
+      <recent name="$PROJECT_DIR$/product/src/main/resources" />
+      <recent name="$PROJECT_DIR$/auth/src/main/java/com/sparta/msa_exam/auth" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.sparta.msa_exam.order.common.exception" />
+      <recent name="com.sparta.msa_exam.product.model.valueobject.converter" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.OrderApplication: 19092">
+    <configuration name="/Users/jowonho/Documents/Programing/Spring/SpartaDeep/Projects/Personal/Chapter1/eureka [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/eureka" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="buildDependents" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="/Users/jowonho/Documents/Programing/Spring/SpartaDeep/Projects/Personal/Chapter1/eureka [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/eureka" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="order [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/order" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="product [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/product" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="AuthApplication: 19095" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" value="dev" />
+      <envs>
+        <env name="JWT_SECRET_KEY" value="c2Rhc2RzYWRzYWR2eGNvdXZoeGprbHZuZHNram9pZHNqZmxrc2RmZHNkc2ZkZnNkYTEyMzEyMzEy7Ja07JuF7JW8" />
+        <env name="PROD_JWT_SECRET_KEY" value="c2Rhc2RzYWRzYWR2eGNvdXZoeGprbHZuZHNram9pZHNqZmxrc2RmZHNkc2ZkZnNkYTEyMzEyMzEy7Ja07JuF7JW8" />
+        <env name="PROD_JWT_EXPRIRATION" value="3600000" />
+        <env name="PROD_EUREKA_SERVER_URI" value="http://localhost:19090/eureka/" />
+        <env name="PROD_SERVER_PORT" value="19095" />
+      </envs>
+      <module name="auth.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sparta.msa_exam.auth.AuthApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaApplication: 19090" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="eureka.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sparta.msa_exam.eureka.EurekaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayApplication: 19091" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" value="dev" />
+      <envs>
+        <env name="JWT_SECRET_KEY" value="c2Rhc2RzYWRzYWR2eGNvdXZoeGprbHZuZHNram9pZHNqZmxrc2RmZHNkc2ZkZnNkYTEyMzEyMzEy7Ja07JuF7JW8" />
+        <env name="PROD_EUREKA_SERVER_URI" value="http://localhost:19090/eureka/" />
+        <env name="PROD_JWT_SECRET_KEY" value="c2Rhc2RzYWRzYWR2eGNvdXZoeGprbHZuZHNram9pZHNqZmxrc2RmZHNkc2ZkZnNkYTEyMzEyMzEy7Ja07JuF7JW8" />
+        <env name="PROD_SERVER_PORT" value="19095" />
+      </envs>
+      <module name="gateway.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sparta.msa_exam.gateway.GatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderApplication: 19092" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" value="dev" />
+      <envs>
+        <env name="PROD_EUREKA_SERVER_URI" value="http://localhost:19090/eureka/" />
+        <env name="PROD_RDS_PASSWORD" value="password" />
+        <env name="PROD_RDS_URL" value="jdbc:mysql://localhost:3306/msa" />
+        <env name="PROD_RDS_USERNAME" value="root" />
+        <env name="PROD_REDIS_HOST" value="localhost" />
+        <env name="PROD_REDIS_PASSWORD" value="systempass" />
+        <env name="PROD_REDIS_PORT" value="6379" />
+        <env name="PROD_REDIS_USERNAME" value="default" />
+        <env name="PROD_ZIPKIN_SERVER_URI" value="http://localhost:9411/api/v2/spans" />
+        <env name="PROD_SERVER_PORT" value="19092" />
+      </envs>
+      <module name="order.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sparta.msa_exam.order.OrderApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductApplication: 19093" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" value="dev" />
+      <envs>
+        <env name="PROD_RDS_PASSWORD" value="password" />
+        <env name="PROD_RDS_URL" value="jdbc:mysql://localhost:3306/msa" />
+        <env name="PROD_RDS_USERNAME" value="root" />
+        <env name="PROD_REDIS_HOST" value="localhost" />
+        <env name="PROD_REDIS_PORT" value="6379" />
+        <env name="PROD_REDIS_USERNAME" value="default" />
+        <env name="PROD_REDIS_PASSWORD" value="systempass" />
+        <env name="PROD_EUREKA_SERVER_URI" value="http://localhost:19090/eureka/" />
+        <env name="PROD_ZIPKIN_SERVER_URI" value="http://localhost:9411/api/v2/spans" />
+      </envs>
+      <module name="product.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sparta.msa_exam.product.ProductApplication" />
+      <option name="VM_PARAMETERS" value="-Dserver.port=19093" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductApplication: 19094" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" value="dev" />
+      <envs>
+        <env name="PROD_RDS_PASSWORD" value="password" />
+        <env name="PROD_RDS_URL" value="jdbc:mysql://localhost:3306/msa" />
+        <env name="PROD_RDS_USERNAME" value="root" />
+        <env name="PROD_REDIS_HOST" value="localhost" />
+        <env name="PROD_REDIS_PORT" value="6379" />
+        <env name="PROD_REDIS_USERNAME" value="default" />
+        <env name="PROD_REDIS_PASSWORD" value="systempass" />
+        <env name="PROD_EUREKA_SERVER_URI" value="http://localhost:19090/eureka/" />
+        <env name="PROD_ZIPKIN_SERVER_URI" value="http://localhost:9411/api/v2/spans" />
+      </envs>
+      <module name="product.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sparta.msa_exam.product.ProductApplication" />
+      <option name="VM_PARAMETERS" value="-Dserver.port=19094" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Gradle.order [build]" />
+      <item itemvalue="Gradle.product [build]" />
+      <item itemvalue="Gradle./Users/jowonho/Documents/Programing/Spring/SpartaDeep/Projects/Personal/Chapter1/eureka [buildDependents]" />
+      <item itemvalue="Gradle./Users/jowonho/Documents/Programing/Spring/SpartaDeep/Projects/Personal/Chapter1/eureka [build]" />
+      <item itemvalue="Spring Boot.AuthApplication: 19095" />
+      <item itemvalue="Spring Boot.EurekaApplication: 19090" />
+      <item itemvalue="Spring Boot.GatewayApplication: 19091" />
+      <item itemvalue="Spring Boot.ProductApplication: 19093" />
+      <item itemvalue="Spring Boot.ProductApplication: 19094" />
+      <item itemvalue="Spring Boot.OrderApplication: 19092" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.order [build]" />
+        <item itemvalue="Gradle.product [build]" />
+        <item itemvalue="Gradle./Users/jowonho/Documents/Programing/Spring/SpartaDeep/Projects/Personal/Chapter1/eureka [build]" />
+        <item itemvalue="Gradle./Users/jowonho/Documents/Programing/Spring/SpartaDeep/Projects/Personal/Chapter1/eureka [buildDependents]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="21829c09-51e0-4203-bfb1-2f5e413f22a8" name="Changes" comment="" />
+      <created>1722920997433</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1722920997433</updated>
+      <workItem from="1722920998632" duration="2413000" />
+      <workItem from="1722923430023" duration="4064000" />
+      <workItem from="1722927519819" duration="5505000" />
+      <workItem from="1722935094516" duration="179000" />
+      <workItem from="1722935283980" duration="13730000" />
+      <workItem from="1723079433729" duration="14568000" />
+      <workItem from="1723098950876" duration="7308000" />
+      <workItem from="1723116946059" duration="785000" />
+      <workItem from="1723168250223" duration="1715000" />
+      <workItem from="1723170285615" duration="63000" />
+      <workItem from="1723257283745" duration="8058000" />
+    </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1722921267794</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1722921267794</updated>
+    </task>
+    <task id="LOCAL-00002" summary="git ignore">
+      <option name="closed" value="true" />
+      <created>1722927264849</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1722927264849</updated>
+    </task>
+    <task id="LOCAL-00003" summary="git ignore">
+      <option name="closed" value="true" />
+      <created>1722927270158</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1722927270158</updated>
+    </task>
+    <task id="LOCAL-00004" summary="design: Product API 디자인 및 인터페이스 작성">
+      <option name="closed" value="true" />
+      <created>1722930559237</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1722930559237</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat: EurekaServer">
+      <option name="closed" value="true" />
+      <created>1722946200097</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1722946200098</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat: Eureka Client, Create Product, Get Products, GlobalExceptionHandler">
+      <option name="closed" value="true" />
+      <created>1722949503854</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1722949503854</updated>
+    </task>
+    <task id="LOCAL-00007" summary="design: Order 디자인 및 인터페이스 작성">
+      <option name="closed" value="true" />
+      <created>1722956129438</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1722956129438</updated>
+    </task>
+    <task id="LOCAL-00008" summary="design: OrderProduct 디자인 및 인터페이스 작성">
+      <option name="closed" value="true" />
+      <created>1722956494758</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1722956494758</updated>
+    </task>
+    <task id="LOCAL-00009" summary="fix: SuccessMessage Enum 명 수정 Product -&gt; Order">
+      <option name="closed" value="true" />
+      <created>1722956580232</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1722956580232</updated>
+    </task>
+    <task id="LOCAL-00010" summary="feat: CreateOrder, EditOrder, GetOrder">
+      <option name="closed" value="true" />
+      <created>1723085773546</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1723085773546</updated>
+    </task>
+    <task id="LOCAL-00011" summary="fix: application name product -&gt; product-service">
+      <option name="closed" value="true" />
+      <created>1723086414497</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1723086414497</updated>
+    </task>
+    <task id="LOCAL-00012" summary="fix: application name order-service">
+      <option name="closed" value="true" />
+      <created>1723086453912</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1723086453912</updated>
+    </task>
+    <task id="LOCAL-00013" summary="auth init">
+      <option name="closed" value="true" />
+      <created>1723087236628</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1723087236628</updated>
+    </task>
+    <task id="LOCAL-00014" summary="feat: create AccessToken">
+      <option name="closed" value="true" />
+      <created>1723088892763</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1723088892763</updated>
+    </task>
+    <task id="LOCAL-00015" summary="fix: getId -&gt; getProductId">
+      <option name="closed" value="true" />
+      <created>1723097264066</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1723097264066</updated>
+    </task>
+    <task id="LOCAL-00016" summary="feat: added Server Port">
+      <option name="closed" value="true" />
+      <created>1723097299425</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1723097299425</updated>
+    </task>
+    <task id="LOCAL-00017" summary="feat: Gateway JwtFilter">
+      <option name="closed" value="true" />
+      <created>1723097332495</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1723097332495</updated>
+    </task>
+    <task id="LOCAL-00018" summary="fix: Gateway product Path product/** -&gt; products/**">
+      <option name="closed" value="true" />
+      <created>1723097765249</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1723097765249</updated>
+    </task>
+    <task id="LOCAL-00019" summary="feat: 분산 추적을 위한 Zipkin 추가">
+      <option name="closed" value="true" />
+      <created>1723099256282</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1723099256283</updated>
+    </task>
+    <task id="LOCAL-00020" summary="fix: camel case -&gt; snake case">
+      <option name="closed" value="true" />
+      <created>1723107663968</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1723107663968</updated>
+    </task>
+    <task id="LOCAL-00021" summary="refactor: parse json -&gt; Deserialization">
+      <option name="closed" value="true" />
+      <created>1723107731380</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1723107731380</updated>
+    </task>
+    <task id="LOCAL-00022" summary="feat: Caching getProducts">
+      <option name="closed" value="true" />
+      <created>1723261463898</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1723261463898</updated>
+    </task>
+    <task id="LOCAL-00023" summary="feat: prod, dev 환경 분리">
+      <option name="closed" value="true" />
+      <created>1723272545875</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1723272545875</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <MESSAGE value="git ignore" />
+    <MESSAGE value="design: Product API 디자인 및 인터페이스 작성" />
+    <MESSAGE value="feat: EurekaServer" />
+    <MESSAGE value="feat: Eureka Client, Create Product, Get Products, GlobalExceptionHandler" />
+    <MESSAGE value="design: Order 디자인 및 인터페이스 작성" />
+    <MESSAGE value="design: OrderProduct 디자인 및 인터페이스 작성" />
+    <MESSAGE value="fix: SuccessMessage Enum 명 수정 Product -&gt; Order" />
+    <MESSAGE value="feat: CreateOrder, EditOrder, GetOrder" />
+    <MESSAGE value="fix: application name product -&gt; product-service" />
+    <MESSAGE value="fix: application name order-service" />
+    <MESSAGE value="auth init" />
+    <MESSAGE value="feat: create AccessToken" />
+    <MESSAGE value="fix: getId -&gt; getProductId" />
+    <MESSAGE value="feat: added Server Port" />
+    <MESSAGE value="feat: Gateway JwtFilter" />
+    <MESSAGE value="fix: Gateway product Path product/** -&gt; products/**" />
+    <MESSAGE value="feat: 분산 추적을 위한 Zipkin 추가" />
+    <MESSAGE value="fix: camel case -&gt; snake case" />
+    <MESSAGE value="refactor: parse json -&gt; Deserialization" />
+    <MESSAGE value="feat: Caching getProducts" />
+    <MESSAGE value="feat: prod, dev 환경 분리" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: prod, dev 환경 분리" />
+  </component>
+</project>

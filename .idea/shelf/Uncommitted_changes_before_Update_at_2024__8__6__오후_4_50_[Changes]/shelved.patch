@@ -1,0 +1,113 @@
+Index: order/src/main/java/com/sparta/msa_exam/order/config/JpaConfig.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/order/src/main/java/com/sparta/msa_exam/order/config/JpaConfig.java b/order/src/main/java/com/sparta/msa_exam/order/config/JpaConfig.java
+new file mode 100644
+--- /dev/null	(date 1722921975034)
++++ b/order/src/main/java/com/sparta/msa_exam/order/config/JpaConfig.java	(date 1722921975034)
+@@ -0,0 +1,10 @@
++package com.sparta.msa_exam.order.config;
++
++import org.springframework.context.annotation.Configuration;
++import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
++
++@EnableJpaAuditing
++@Configuration
++public class JpaConfig {
++
++}
+Index: order/src/main/java/com/sparta/msa_exam/order/common/CommonResponse.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/order/src/main/java/com/sparta/msa_exam/order/common/CommonResponse.java b/order/src/main/java/com/sparta/msa_exam/order/common/CommonResponse.java
+new file mode 100644
+--- /dev/null	(date 1722921868130)
++++ b/order/src/main/java/com/sparta/msa_exam/order/common/CommonResponse.java	(date 1722921868130)
+@@ -0,0 +1,11 @@
++package com.sparta.msa_exam.order.common;
++
++import lombok.NonNull;
++
++public interface CommonResponse {
++
++    boolean success();
++
++    @NonNull
++    String message();
++}
+\ No newline at end of file
+Index: order/src/main/java/com/sparta/msa_exam/order/common/SuccessResponse.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/order/src/main/java/com/sparta/msa_exam/order/common/SuccessResponse.java b/order/src/main/java/com/sparta/msa_exam/order/common/SuccessResponse.java
+new file mode 100644
+--- /dev/null	(date 1722921868135)
++++ b/order/src/main/java/com/sparta/msa_exam/order/common/SuccessResponse.java	(date 1722921868135)
+@@ -0,0 +1,29 @@
++package com.sparta.msa_exam.order.common;
++
++import static com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL;
++import static lombok.AccessLevel.PRIVATE;
++
++import com.fasterxml.jackson.annotation.JsonInclude;
++import lombok.Builder;
++import lombok.NonNull;
++
++@Builder(access = PRIVATE)
++public record SuccessResponse<T> (
++        boolean success,
++        @NonNull
++        String message,
++        @JsonInclude(value = NON_NULL) T data
++) implements CommonResponse {
++
++    public static <T> SuccessResponse<T> success(String message, T data) {
++        return SuccessResponse.<T>builder()
++                .success(true)
++                .message(message)
++                .data(data)
++                .build();
++    }
++
++    public static SuccessResponse<?> success(String message) {
++        return SuccessResponse.builder().success(true).message(message).build();
++    }
++}
+\ No newline at end of file
+Index: order/src/main/java/com/sparta/msa_exam/order/common/ErrorResponse.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/order/src/main/java/com/sparta/msa_exam/order/common/ErrorResponse.java b/order/src/main/java/com/sparta/msa_exam/order/common/ErrorResponse.java
+new file mode 100644
+--- /dev/null	(date 1722921868092)
++++ b/order/src/main/java/com/sparta/msa_exam/order/common/ErrorResponse.java	(date 1722921868092)
+@@ -0,0 +1,20 @@
++package com.sparta.msa_exam.order.common;
++
++import lombok.AccessLevel;
++import lombok.Builder;
++import lombok.NonNull;
++
++@Builder(access = AccessLevel.PRIVATE)
++public record ErrorResponse(
++        boolean success,
++        @NonNull
++        String message
++) implements CommonResponse {
++
++    public static ErrorResponse of(String message) {
++        return ErrorResponse.builder()
++                .success(false)
++                .message(message)
++                .build();
++    }
++}
+\ No newline at end of file
