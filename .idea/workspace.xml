@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21829c09-51e0-4203-bfb1-2f5e413f22a8" name="Changes" comment=".idea">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/sparta/msa_exam/order/dto/OrderResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/sparta/msa_exam/order/dto/OrderResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/sparta/msa_exam/order/service/OrderServiceImplV1.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/sparta/msa_exam/order/service/OrderServiceImplV1.java" afterDir="false" />
-    </list>
+    <list default="true" id="21829c09-51e0-4203-bfb1-2f5e413f22a8" name="Changes" comment="feat: OrderResponse 정적 팩토리 메서드 패턴" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -432,7 +428,7 @@
       <workItem from="1723116946059" duration="785000" />
       <workItem from="1723168250223" duration="1715000" />
       <workItem from="1723170285615" duration="63000" />
-      <workItem from="1723257283745" duration="12563000" />
+      <workItem from="1723257283745" duration="13005000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -746,14 +742,21 @@
       <option name="project" value="LOCAL" />
       <updated>1723278341334</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="feat: OrderResponse 정적 팩토리 메서드 패턴">
+      <option name="closed" value="true" />
+      <created>1723278832368</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1723278832368</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="first commit" />
     <MESSAGE value="git ignore" />
     <MESSAGE value="design: Product API 디자인 및 인터페이스 작성" />
     <MESSAGE value="feat: EurekaServer" />
@@ -778,6 +781,7 @@
     <MESSAGE value="feat: gitignore .idea 제외" />
     <MESSAGE value="feat: Caching Order" />
     <MESSAGE value=".idea" />
-    <option name="LAST_COMMIT_MESSAGE" value=".idea" />
+    <MESSAGE value="feat: OrderResponse 정적 팩토리 메서드 패턴" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: OrderResponse 정적 팩토리 메서드 패턴" />
   </component>
 </project>

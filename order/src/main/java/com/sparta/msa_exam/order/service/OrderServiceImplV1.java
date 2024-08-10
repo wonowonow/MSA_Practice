@@ -1,6 +1,7 @@
 package com.sparta.msa_exam.order.service;
 
 import com.sparta.msa_exam.order.client.ProductClient;
+import com.sparta.msa_exam.order.client.response.ProductResponseDto;
 import com.sparta.msa_exam.order.client.response.ProductsResponse;
 import com.sparta.msa_exam.order.common.exception.OrderException;
 import com.sparta.msa_exam.order.common.message.ExceptionMessage;
@@ -12,6 +13,7 @@ import com.sparta.msa_exam.order.model.Order;
 import com.sparta.msa_exam.order.model.OrderProduct;
 import com.sparta.msa_exam.order.repository.OrderRepository;
 import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -36,10 +38,14 @@ public class OrderServiceImplV1 implements OrderService {
         Order order = Order.of(orderCreateDto);
         order = orderRepository.save(order);
 
-        ProductsResponse products = productClient.getProducts();
+        Set<Long> products = productClient.getProducts()
+                                          .getData()
+                                          .stream()
+                                          .map(ProductResponseDto::product_id)
+                                          .collect(Collectors.toSet());
 
         for (Long id : orderCreateDto.product_ids()) {
-            if (products.getData().stream().noneMatch(product -> product.product_id().equals(id))) {
+            if (!products.contains(id)) {
                 throw new OrderException(ExceptionMessage.NOT_FOUND_PRODUCT);
             }
             OrderProductCreateDto orderProductCreateDto = new OrderProductCreateDto(order, id);
