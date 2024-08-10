@@ -1,8 +1,13 @@
 spring:
+  profiles:
+    active: dev
+
   application:
     name: gateway-service
+
   main:
     web-application-type: reactive
+
   cloud:
     gateway:
       routes:
@@ -18,19 +23,7 @@ spring:
           uri: lb://auth-service
           predicates:
             - Path=/auth/**
+
       discovery:
         locator:
           enabled: true
-
-
-server:
-  port: 19091
-
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:19090/eureka/
-
-service:
-  jwt:
-    secret-key: ${JWT_SECRET_KEY}

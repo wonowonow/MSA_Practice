@@ -1,0 +1,36 @@
+spring:
+  config:
+    activate:
+      on-profile: prod
+
+  datasource:
+    url: ${PROD_RDS_URL}
+    username: ${PROD_RDS_USERNAME}
+    password: ${PROD_RDS_PASSWORD}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  data:
+    redis:
+      host: ${PROD_REDIS_HOST}
+      port: ${PROD_REDIS_PORT}
+      username: ${PROD_REDIS_USERNAME}
+      password: ${PROD_REDIS_PASSWORD}
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    properties:
+      database-platform: org.hibernate.dialect.MySQL8Dialect
+
+eureka:
+  client:
+    service-url:
+      defaultZone: ${PROD_EUREKA_SERVER_URI}
+
+management:
+  zipkin:
+    tracing:
+      endpoint: ${PROD_ZIPKIN_SERVER_URI}
+  tracing:
+    sampling:
+      probability: 1.0

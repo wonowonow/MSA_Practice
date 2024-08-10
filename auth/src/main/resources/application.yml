@@ -1,16 +1,6 @@
 spring:
+  profiles:
+    active: dev
+
   application:
     name: auth-service
-
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:19090/eureka/
-
-service:
-  jwt:
-    secret-key: ${JWT_SECRET_KEY}
-    access-expiration: 3600000
-
-server:
-  port: 19095

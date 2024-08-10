@@ -1,0 +1,16 @@
+spring:
+  config:
+    activate:
+      on-profile: prod
+
+server:
+  port: ${PROD_SERVER_PORT}
+
+eureka:
+  client:
+    service-url:
+      defaultZone: ${PROD_EUREKA_SERVER_URI}
+
+service:
+  jwt:
+    secret-key: ${PROD_JWT_SECRET_KEY}
