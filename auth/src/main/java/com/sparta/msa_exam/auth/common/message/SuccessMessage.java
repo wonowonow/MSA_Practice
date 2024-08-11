@@ -11,7 +11,8 @@ import org.springframework.http.HttpStatus;
 @RequiredArgsConstructor
 public enum SuccessMessage {
 
-    SUCCESS_CREATE_TOKEN(CREATED, "Token Created Successfully");
+    SUCCESS_CREATE_TOKEN(CREATED, "Token Created Successfully"),
+    SUCCESS_SIGN_UP(CREATED, "Sign Up Successfully");
 
     private final HttpStatus httpStatus;
     private final String message;
