@@ -3,7 +3,7 @@
 기간 - 2024-08-06 ~ 2024-08-12
 
 ## Server Architecture
-<img width="1566" alt="스크린샷 2024-08-10 오후 4 04 12" src="https://github.com/user-attachments/assets/02e67b50-944f-40da-a4d0-ce28f6d927a2">
+<img width="1567" alt="스크린샷 2024-08-11 오후 5 03 43" src="https://github.com/user-attachments/assets/f8e235de-db6b-4a88-80f9-b7b3c72e0e2a">
 
 ## 구현 목록
 - 라운드 로빈 형식 로드밸런싱
