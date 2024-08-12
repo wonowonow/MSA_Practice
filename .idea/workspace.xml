@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21829c09-51e0-4203-bfb1-2f5e413f22a8" name="Changes" comment="feat: Member SignUp">
+    <list default="true" id="21829c09-51e0-4203-bfb1-2f5e413f22a8" name="Changes" comment="fix: 안 쓰는 import 제외">
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/sparta/msa_exam/gateway/filter/global/AddServerPortHeaderFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -199,7 +200,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.AuthApplication: 19095">
+  <component name="RunManager" selected="Spring Boot.GatewayApplication: 19091">
     <configuration name="/Users/jowonho/Documents/Programing/Spring/SpartaDeep/Projects/Personal/Chapter1/eureka [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -434,6 +435,8 @@
       <workItem from="1723257283745" duration="22211000" />
       <workItem from="1723355286682" duration="4420000" />
       <workItem from="1723376988271" duration="2062000" />
+      <workItem from="1723427605299" duration="100000" />
+      <workItem from="1723439336786" duration="312000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -771,15 +774,29 @@
       <option name="project" value="LOCAL" />
       <updated>1723358464515</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="fix: 빼먹은 Transactional 붙이기">
+      <option name="closed" value="true" />
+      <created>1723427667339</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1723427667339</updated>
+    </task>
+    <task id="LOCAL-00044" summary="fix: 안 쓰는 import 제외">
+      <option name="closed" value="true" />
+      <created>1723427695037</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1723427695037</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: EurekaServer" />
-    <MESSAGE value="feat: Eureka Client, Create Product, Get Products, GlobalExceptionHandler" />
     <MESSAGE value="design: Order 디자인 및 인터페이스 작성" />
     <MESSAGE value="design: OrderProduct 디자인 및 인터페이스 작성" />
     <MESSAGE value="fix: SuccessMessage Enum 명 수정 Product -&gt; Order" />
@@ -803,6 +820,8 @@
     <MESSAGE value="feat: OrderResponse 정적 팩토리 메서드 패턴" />
     <MESSAGE value="refactor: createOrder List -&gt; Set 으로 성능 향상" />
     <MESSAGE value="feat: Member SignUp" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Member SignUp" />
+    <MESSAGE value="fix: 빼먹은 Transactional 붙이기" />
+    <MESSAGE value="fix: 안 쓰는 import 제외" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: 안 쓰는 import 제외" />
   </component>
 </project>
