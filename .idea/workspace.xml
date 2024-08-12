@@ -4,25 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21829c09-51e0-4203-bfb1-2f5e413f22a8" name="Changes" comment="refactor: createOrder List -&gt; Set 으로 성능 향상">
-      <change afterPath="$PROJECT_DIR$/auth/src/main/java/com/sparta/msa_exam/auth/dto/SignUpDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/java/com/sparta/msa_exam/auth/model/Member.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/java/com/sparta/msa_exam/auth/model/valueobject/MemberUsername.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/java/com/sparta/msa_exam/auth/model/valueobject/converter/MemberUsernameConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/java/com/sparta/msa_exam/auth/repository/MemberRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="21829c09-51e0-4203-bfb1-2f5e413f22a8" name="Changes" comment="feat: Member SignUp">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/auth/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/sparta/msa_exam/auth/common/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/sparta/msa_exam/auth/common/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/sparta/msa_exam/auth/common/message/ExceptionMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/sparta/msa_exam/auth/common/message/ExceptionMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/sparta/msa_exam/auth/common/message/SuccessMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/sparta/msa_exam/auth/common/message/SuccessMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/sparta/msa_exam/auth/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/sparta/msa_exam/auth/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/sparta/msa_exam/auth/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/sparta/msa_exam/auth/service/AuthService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/sparta/msa_exam/auth/service/AuthServiceImplV1.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/sparta/msa_exam/auth/service/AuthServiceImplV1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/com/sparta/msa_exam/gateway/filter/global/JwtAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/com/sparta/msa_exam/gateway/filter/global/JwtAuthenticationFilter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -449,7 +432,8 @@
       <workItem from="1723168250223" duration="1715000" />
       <workItem from="1723170285615" duration="63000" />
       <workItem from="1723257283745" duration="22211000" />
-      <workItem from="1723355286682" duration="3055000" />
+      <workItem from="1723355286682" duration="4420000" />
+      <workItem from="1723376988271" duration="2062000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -779,14 +763,21 @@
       <option name="project" value="LOCAL" />
       <updated>1723288529765</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="feat: Member SignUp">
+      <option name="closed" value="true" />
+      <created>1723358464515</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1723358464515</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="design: Product API 디자인 및 인터페이스 작성" />
     <MESSAGE value="feat: EurekaServer" />
     <MESSAGE value="feat: Eureka Client, Create Product, Get Products, GlobalExceptionHandler" />
     <MESSAGE value="design: Order 디자인 및 인터페이스 작성" />
@@ -811,6 +802,7 @@
     <MESSAGE value=".idea" />
     <MESSAGE value="feat: OrderResponse 정적 팩토리 메서드 패턴" />
     <MESSAGE value="refactor: createOrder List -&gt; Set 으로 성능 향상" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: createOrder List -&gt; Set 으로 성능 향상" />
+    <MESSAGE value="feat: Member SignUp" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Member SignUp" />
   </component>
 </project>

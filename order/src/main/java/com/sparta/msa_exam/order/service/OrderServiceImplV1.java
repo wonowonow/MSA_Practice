@@ -57,6 +57,7 @@ public class OrderServiceImplV1 implements OrderService {
 
     @Override
     @Cacheable(cacheNames = "order", key = "args[0]")
+    @Transactional(readOnly = true)
     public OrderResponseDto getOrder(Long orderId) {
 
         Order order = orderRepository.findById(orderId).orElseThrow(
@@ -68,6 +69,7 @@ public class OrderServiceImplV1 implements OrderService {
 
     @Override
     @CachePut(cacheNames = "order", key = "args[0]")
+    @Transactional
     public OrderResponseDto editOrder(Long orderId, OrderEditDto orderEditDto) {
 
         Order order = orderRepository.findById(orderId).orElseThrow(
